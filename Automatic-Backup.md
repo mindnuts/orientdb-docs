@@ -65,7 +65,8 @@ This section tells the OrientDB server to read the file at `$ORIENTDB_HOME/confi
   - *`${DBNAME}`* Renders the database name.
   - *`${DATE}`* Renders the current date, using the [Java DateTime syntax](http://download.oracle.com/javase/1,5.0/docs/api/java/text/SimpleDateFormat.html) format.
 - **`"dbInclude"`** Defines in a list the databases to include in the automatic backups.  If empty, it backs up all databases.
-- **`"dbExclude"`** Defines in a list the databases to exclude from the automatic backups.
+- **`"dbExclude"`** Defines in a list the databases to exclude from the automatic backups. Example:
+  - * `["MyDb1", "MyDb2"]` *
 - **`"bufferSize"`** Defines the in-memory buffer sizes to use in compression.  By default, it is set to `1MB`.  Larger buffers mean faster backups, but they in turn consume more RAM.
 - **`"compressionLevel"`** Defines the compression level for the resulting ZIP file.  By default it is set to the maximum level of `9`.  Set it to a lower value if you find that the backup takes too much time.
 
